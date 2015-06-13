@@ -1,5 +1,7 @@
 require_relative '../../lib/euler.rb'
 
-answer = 0
+require 'prime'
+target = 600851475143
+answer = target.prime_division.map{|arr| arr.first}.max
 
 puts answer
