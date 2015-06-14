@@ -1,3 +1,5 @@
+require 'pry'
+
 class Fibonacci
   def self.by_key limit
     fibo = {1=>1, 2=>2}
