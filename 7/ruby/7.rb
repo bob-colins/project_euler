@@ -1,5 +1,7 @@
 require_relative '../../lib/euler.rb'
 
-answer = 0
+prime_list = Prime.by_key(10001)
+
+answer = prime_list.last
 
 puts answer

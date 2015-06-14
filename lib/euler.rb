@@ -21,3 +21,27 @@ class Fibonacci
     return fibo
   end
 end
+
+
+class Prime
+  require 'prime'
+  def self.by_key limit
+    prime_list = Array.new()
+    (1..Float::INFINITY).each do |n|
+      break if limit.to_i <= prime_list.size
+      prime_list.push(n) if n.prime?
+    end
+
+    prime_list
+  end
+
+  def self.by_value limit
+    prime_list = Array.new()
+    (1..Float::INFINITY).each do |n|
+      break if limit.to_i < n
+      prime_list.push(n) if n.prime?
+    end
+
+    prime_list
+  end
+end
