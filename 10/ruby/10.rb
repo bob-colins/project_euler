@@ -1,5 +1,6 @@
 require_relative '../../lib/euler.rb'
 
-answer = 0
+n = 2000000
+answer = Prime.by_value(n).inject(:+)
 
 puts answer
